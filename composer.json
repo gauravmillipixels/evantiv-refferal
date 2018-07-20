@@ -1,7 +1,7 @@
 {
     "name": "millipixels/evantivreferral",
     "description": "Referral package by MilliPixels",
-    "keywords": ["template", "composer", "package"],
+    "keywords": ["Referral", "composer", "package"],
     "license": "proprietary",
     "authors": [
         {
