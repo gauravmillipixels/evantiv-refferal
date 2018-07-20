@@ -10,7 +10,7 @@ namespace millipixels\evantivreferral;
 *
 *  @author yourname
 */
-class EvantivReferral{
+class Referral{
 
    /**  @var string $m_SampleProperty define here what this variable is for, do this for every instance variable */
    private $m_SampleProperty = '';
@@ -25,7 +25,7 @@ class EvantivReferral{
   *
   * @return string
   */
-   public function method1($param1){
+   public static function method1($param1){
 			return "Hello World";
    }
 }
