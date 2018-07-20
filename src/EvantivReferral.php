@@ -1,6 +1,6 @@
 <?php 
 
-namespace milli-pixels\evantivreferral;
+namespace millipixels\evantivreferral;
 
 /**
 *  A sample class
