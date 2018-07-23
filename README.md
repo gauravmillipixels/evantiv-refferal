@@ -98,7 +98,30 @@ Load jquery.min.js & share.js by adding the following lines to your template fil
 
 ## Usage
 
-### Creating one referral program 
+### Creating one referral program follow below steps 
+Add route for sendemail
+```routes
+//routes/web.php
+
+Route::post('/sendemail', 'HomeController@sendEmail')->name('sendemail');
+```
+
+Add sendemail function 
+```routes
+///app/Http/Controllers/HomeController.php
+
+    public function sendEmail(Request $request) {
+        $user = \App\User::findOrFail(Auth()->id());
+        $data = array('name' => 'referrer', "body" => $user->getReferralLink());
+        Mail::send('emails.mail', $data, function($message)use($request) {
+            $message->to($request->email, 'referrer')
+                    ->subject('Please login with below URL');
+            $message->from('gaurav@evantiv.com', 'Hackthones evantiv');
+        });
+        return redirect()->back()->with('message', 'Email sent !');
+//        return view('home', ['user' => $user]);
+    }
+```
 
 
 
