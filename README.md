@@ -89,16 +89,10 @@ Laravel share supports Font Awesome v4 and v5, by default v4 is used. You can sp
 
 ### Javascript
 
-Load jquery.min.js & share.js by adding the following lines to your template files.
-
-```html
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="{{ asset('js/share.js') }}"></script>
-```
-
 ## Usage
 
 ### Creating one referral program follow below steps 
+
 Add route for sendemail
 ```routes
 //routes/web.php
@@ -121,6 +115,13 @@ Add sendemail function
         return redirect()->back()->with('message', 'Email sent !');
 //        return view('home', ['user' => $user]);
     }
+```
+
+Load jquery.min.js & share.js by adding the following lines to your template files.
+
+```html
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="{{ asset('js/share.js') }}"></script>
 ```
 
 
