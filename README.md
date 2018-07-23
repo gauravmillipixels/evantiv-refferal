@@ -40,9 +40,9 @@ And optionally add the facade in config/app.php
  	'Referral' => millipixels\evantivreferral\Referral::class
 ];
 ```
+Update autoload of composer by adding in psr-4
 
-
-```Update autoload by adding in psr-4
+```Update 
 //composer.json
 "millipixels\\evantivreferral\\": "vendor/millipixels/evantivreferral/src/"
 	will look like below
@@ -98,7 +98,9 @@ Load jquery.min.js & share.js by adding the following lines to your template fil
 
 ## Usage
 
-### Creating one share link
+### Creating one referral program 
+
+
 
 ## Security
 
